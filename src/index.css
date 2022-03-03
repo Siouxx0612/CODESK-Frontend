@@ -3,13 +3,17 @@
 * {
   box-sizing: border-box;
 }
+h2 {
+  display:flex;
+  justify-content: center;
+}
 
 html {
-  font-family: 'Noto Sans JP', sans-serif;
+  font-family: 'Noto Sans JP', Verdana, Geneva, Tahoma, sans-serif;
 }
 
 body {
   margin: 0;
-  background-color: #3f3f3f;
+  background-color: #0e6164;
 }
 
