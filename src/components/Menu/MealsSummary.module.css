@@ -5,7 +5,7 @@
     margin: auto;
     margin-top: -10rem;
     position: relative;
-    background-color: #383838;
+    background-color: #0f8080;
     color: white;
     border-radius: 14px;
     padding: 1rem;
@@ -13,6 +13,6 @@
   }
   
   .summary h2 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin-top: 0;
   }
