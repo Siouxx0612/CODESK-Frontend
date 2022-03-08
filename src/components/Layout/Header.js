@@ -15,14 +15,14 @@ const Header = props => {
                 </div>
 
                 <div>
-                    <div className={classes.logo}>
-                        Delivery to: Gabriel Jönssonsgatan 8 ^
+                    <div  className={classes.deliveryAdress}>
+                        Delivery to: Gabriel Jönssonsgatan 8 
                     </div>
                 </div>
 
-                <div>
+                <div className={classes.deliveryTime}>
                     <div >
-                        Choose time: ^
+                        Choose time: Now
                     </div>
                 </div>
 

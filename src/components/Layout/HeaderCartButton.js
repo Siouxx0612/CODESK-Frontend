@@ -5,7 +5,7 @@ import CartIcon from '../Cart/CartIcon';
 const HeaderCartButton = props => {
 
     return (
-        <button className={classes.button}>
+        <div className={classes.button}>
             <span className={classes.icon}>
                 <CartIcon />
             </span>
@@ -13,7 +13,7 @@ const HeaderCartButton = props => {
             <span className={classes.badge}>
                 3
             </span>
-        </button>
+        </div>
     );
 };
 
