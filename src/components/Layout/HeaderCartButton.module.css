@@ -1,0 +1,61 @@
+.button {
+    cursor: pointer;
+    font: inherit;
+    font-size: 12px;
+    border-left: 1px solid #000000;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    padding: 1.5rem 3.3rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* border-radius: 1px; */
+    /* font-weight: bold; */
+  }
+  
+  .button:hover,
+  .button:active {
+    background-color: #35c2c6;
+  }
+  
+  .icon {
+    width: 2rem;
+    height: 2rem;
+    margin-right: 0.3rem;
+  }
+  
+  .badge {
+    color:#ffffff;
+    background-color: #41afb3;
+    padding: 0.1rem 0.6rem;
+    border-radius: 25px;
+    margin-left: 0.3rem;
+    font-weight: bold;
+  }
+  
+  .button:hover .badge,
+  .button:active .badge {
+    background-color: #189da6;
+  }
+  
+  .bump {
+    animation: bump 300ms ease-out;
+  }
+  
+  @keyframes bump {
+    0% {
+      transform: scale(1);
+    }
+    10% {
+      transform: scale(0.9);
+    }
+    30% {
+      transform: scale(1.1);
+    }
+    50% {
+      transform: scale(1.15);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }

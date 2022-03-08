@@ -4,15 +4,31 @@
     left: 0;
     width: 100%;
     height: 5rem;
-    background-color: #666564;
-    color: white;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 10%;
+    /* padding: 0 6%; */
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
     z-index: 10;
+
   }
+  .logo {
+    /* z-index: max;
+    min-width: 4rem;
+    max-height: 1.5rem; */
+    color: rgb(16, 135, 139);
+    border-right: 1px solid rgb(0, 0, 0);
+    padding-right: 3rem;
+    padding-left: 3rem;
+  }
+  .logo:hover,
+  .logo:active {
+    background-color: #35c2c6;
+    color:#ffffff;
+  }
+  
   
   .main-image {
     width: 100%;
@@ -26,4 +42,12 @@
     height: 100%;
     object-fit: cover;
     transform: rotateZ(-5deg) translateY(-4rem) translateX(-1rem);
+  }
+
+  .deliveryAdress {
+    font-size: 12px;
+  }
+
+  .deliveryTime {
+    font-size: 12px;
   }

@@ -1,13 +1,38 @@
 import { Fragment } from 'react';
+import mealsImg from '../../assets/Food-Images-Free-Download.jpeg';
+import classes from '../Layout/Header.module.css';
+import HeaderCartButton from '../Layout/HeaderCartButton';
 
-const Header = (props) => {
+const Header = props => {
 
-    return <Fragment>
-            <header></header>
-            <h1>Meals</h1>
-            <button></button>
-            <div></div>
-        </Fragment> 
+    return (
+        <Fragment>
+            <header className={classes.header}>
+                <div className={classes.logo}>
+                    <h1 >
+                        Foodzilla
+                    </h1>
+                </div>
+
+                <div>
+                    <div  className={classes.deliveryAdress}>
+                        Delivery to: Gabriel Jönssonsgatan 8 
+                    </div>
+                </div>
+
+                <div className={classes.deliveryTime}>
+                    <div >
+                        Choose time: Now
+                    </div>
+                </div>
+
+                <HeaderCartButton />
+            </header>
+            <div className={classes['main-image']}>
+                <img src={mealsImg} />
+            </div>
+        </Fragment>
+    );
 };
 
 export default Header;
