@@ -21,7 +21,7 @@
   @keyframes summary-apears {
     from {
       opacity: 0;
-      transform: translateY(3rem);
+      transform: translateY(-6rem);
     }
   
     to {
