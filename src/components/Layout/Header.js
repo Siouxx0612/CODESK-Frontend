@@ -1,5 +1,5 @@
 import { Fragment } from 'react';
-import mealsImg from '../../assets/Food-Images-Free-Download.jpeg';
+import mealsImg from '../../assets/wp3376124.jpeg';
 import classes from '../Layout/Header.module.css';
 import HeaderCartButton from '../Layout/HeaderCartButton';
 
