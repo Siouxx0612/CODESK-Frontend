@@ -1,20 +1,23 @@
 .button {
     cursor: pointer;
     font: inherit;
-    font-size: 12px;
+    font-size: 13px;
     background-color: #ffffff;
     color: rgb(0, 0, 0);
-    padding: 0rem 3rem;
+    padding: 0rem 2rem;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    border-radius: 2px; 
-    font-weight: bold;
+    /* border-radius: 2px; 
+    font-weight: bold; */
+    border-left: 1px solid rgb(210, 209, 209);
+    border-right: 1px solid rgb(210, 209, 209);
+
   }
   
   .button:hover,
   .button:active {
-    background-color: #ecf9fd;
+    background-color: #ffffff;
   }
   
   .icon {

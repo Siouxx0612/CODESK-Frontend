@@ -9,14 +9,18 @@ const Header = props => {
         <Fragment>
             <header className={classes.header}>
                 <div className={classes.logo}>
-                    <h1 >
+                    <div >
                         Foodzilla
-                    </h1>
+                    </div>
                 </div>
-
+                <div className={classes.delivery}>
+                    <div className={classes.deliveryChoice}>Delivery</div>
+                    <div className={classes.or}>or</div>
+                    <div className={classes.pickUp}>PickUp</div>
+                </div>
                 <div>
-                    <div  className={classes.deliveryAdress}>
-                        Delivery to: Gabriel Jönssonsgatan 8 
+                    <div className={classes.deliveryAdress}>
+                        Gabriel Jönssonsgatan 8
                     </div>
                 </div>
 
