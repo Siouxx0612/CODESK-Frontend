@@ -20,7 +20,7 @@ const Header = props => {
                 </div>
                 <div>
                     <div className={classes.deliveryAdress}>
-                        Gabriel Jönssonsgatan 8
+                       Delivery to: Gabriel Jönssonsgatan 8
                     </div>
                 </div>
 

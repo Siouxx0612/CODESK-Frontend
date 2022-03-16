@@ -50,25 +50,25 @@
     display: flex;
     font-size: 13px;
     justify-content: space-around;
-    min-width: 14rem;
+    min-width: 10rem;
     height: 2rem;
     cursor: pointer;
     background-color: #f3f3f3;
-    border: 1px solid #b4b4b4;
+    /* border: 1px solid #b4b4b4; */
     color: rgb(0, 0, 0);
     align-items: center;
     border-radius: 20px;
   }
   .deliveryChoice {
     
-    padding-left: 1rem;
+    /* padding-left: 0.5rem; */
   }
   .or {
     
   }
   .pickUp {
     
-    padding-right: 1rem;
+    /* padding-right: 0.5rem; */
   }
   .deliveryAdress {
     font-size: 13px;
@@ -78,15 +78,28 @@
     font-size: 13px;
   }
   .deliveryChoice:hover,
-  .pickUp:hover,
+  .pickUp:hover {
+      background-color: #ffffff;
+      border-color: #ffffff;
+      display: flex;
+      font-size: 13px;
+      justify-content: space-around;
+      width: 4rem;
+      height: 1.8rem;
+      cursor: pointer;
+      color: rgb(0, 0, 0);
+      align-items: center;
+      border-radius: 20px;
+  }
+  
   .deliveryChoice:active,
   .pickUp:active {
-    background-color: #55bec3;
+    background-color: #50afc0;
     border-color: #ffffff;
     display: flex;
     font-size: 13px;
     justify-content: space-around;
-    width: 6rem;
+    width: 4rem;
     height: 1.8rem;
     cursor: pointer;
     color: rgb(0, 0, 0);
