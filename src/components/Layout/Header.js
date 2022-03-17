@@ -3,12 +3,18 @@ import mealsImg from '../../assets/wp3376124.jpeg';
 import classes from '../Layout/Header.module.css';
 import HeaderCartButton from '../Layout/HeaderCartButton';
 
+const reload = () =>  {
+    window.location.reload()
+};
+
 const Header = props => {
+
+
 
     return (
         <Fragment>
             <header className={classes.header}>
-                <div className={classes.logo}>
+                <div className={classes.logo} onClick={reload}>
                     <div >
                         Foodzilla
                     </div>
@@ -20,7 +26,7 @@ const Header = props => {
                 </div>
                 <div>
                     <div className={classes.deliveryAdress}>
-                        Gabriel Jönssonsgatan 8
+                       Delivery to: Gabriel Jönssonsgatan 8
                     </div>
                 </div>
 

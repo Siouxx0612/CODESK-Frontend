@@ -6,6 +6,15 @@ const Backdrop = props => {
     return <div className={classes.backdrop} onClick={props.onClose} />
 };
 
+// handleKeyDown(event){
+//     if (event.keyCode === 27) {
+//         this.setState({
+//         fireRedirectProjects: true
+//         })
+//     }
+    
+// }
+
 const ModalOverlays = props => {
     return <div className={classes.modal}>
         <div className={classes.content}>{props.children}</div>

@@ -12,7 +12,7 @@ const MeaItemForm = props => {
                 step: 1,
                 defaultValue: 1,
             }} />
-        <button>+ Add</button>
+        <div className={classes.button}>+ Add</div>
     </form>
 };
 
