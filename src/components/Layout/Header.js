@@ -9,12 +9,10 @@ const reload = () =>  {
 
 const Header = props => {
 
-
-
     return (
         <Fragment>
             <header className={classes.header}>
-                <div className={classes.logo} onClick={reload}>
+                <div className={classes.logo} onlick={reload}>
                     <div >
                         Foodzilla
                     </div>
