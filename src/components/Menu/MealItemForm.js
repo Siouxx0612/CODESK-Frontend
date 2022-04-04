@@ -7,10 +7,10 @@ const MeaItemForm = props => {
             input={{
                 id: "Amount" + props.id,
                 type: "number",
-                min: 1,
-                max: 5,
-                step: 1,
-                defaultValue: 1,
+                min: "1",
+                max: "5",
+                step: "1",
+                defaultValue: "1",
             }} />
         <div className={classes.button}>+ Add</div>
     </form>
