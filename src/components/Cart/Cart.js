@@ -1,10 +1,9 @@
 import Modal from '../UI/Modal';
-import { render } from '@testing-library/react';
 import classes from '../Cart/Cart.module.css';
 
 const Cart = props => {
 
-    const cartitems = <ul className="cart-items">{[{ id: 'c1', name: 'sushi', amount: 2, price: 12.99 }].map((item) => <li>{item.name}</li>)}</ul>;
+    const cartitems = <ul className={classes["cart-items"]}>{[{ id: 'c1', name: 'sushi', amount: 2, price: 12.99 }].map((item) => <li>{item.name}</li>)}</ul>;
 
     return (
         <Modal onClose={props.onClose}>

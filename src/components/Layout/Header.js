@@ -12,7 +12,7 @@ const Header = props => {
     return (
         <Fragment>
             <header className={classes.header}>
-                <div className={classes.logo} onlick={reload}>
+                <div className={classes.logo} onClick={reload}>
                     <div >
                         Foodzilla
                     </div>
@@ -34,7 +34,7 @@ const Header = props => {
                     </div>
                 </div>
 
-                <HeaderCartButton onClickCartButton={props.onShowCart} />
+                <HeaderCartButton onClick={props.onShowCart} />
             </header>
             <div className={classes['main-image']}>
                 <img src={mealsImg} />
@@ -43,4 +43,4 @@ const Header = props => {
     );
 };
 
-export default Header;
+export default Header; 
