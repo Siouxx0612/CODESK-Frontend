@@ -5,9 +5,10 @@ import classes from './HeaderCartButton.module.css';
 import CartIcon from '../Cart/CartIcon';
 
 const HeaderCartButton = props => {
-
+    //to get acces to cartContext
     const cartCtx = useContext(CartContext);
 
+    //Add separate items-meals
     const numberOfCartItems = cartCtx.items.reduce((curNumber, item) => {
         return curNumber + item.amount;
     }, 0);

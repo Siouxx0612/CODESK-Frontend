@@ -5,7 +5,7 @@ import classes from '../Cart/Cart.module.css';
 const apiCall = () => {
     CallApi({order: 'Hello this is api call'}, 'POST', 'http://localhost:5000/order').then((result) => console.log(result))
 }
-
+ 
 const Cart = props => {
 
     const cartitems = <ul className={classes["cart-items"]}>{[{ id: 'c1', name: 'sushi', amount: 2, price: 12.99 }].map((item) => <li>{item.name}</li>)}</ul>;
