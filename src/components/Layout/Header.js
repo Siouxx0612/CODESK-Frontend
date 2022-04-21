@@ -11,10 +11,11 @@ const reload = () => {
 const Header = props => {
 
     const [isActive, setIsActive] = useState(false);
+    
 
-
-    function ChangeButtons () {
-        setIsActive = (!isActive);
+    function changeButtons () {
+            setIsActive = (!isActive)
+        
     };
 
     return (
@@ -28,12 +29,12 @@ const Header = props => {
                 <div className={classes.delivery}>
                     <div
                         className={isActive ? classes.deliveryAction : classes.deliveryChoice}
-                        onClick={ChangeButtons}
+                        onChange={changeButtons}
                     >Delivery</div>
                     <div className={classes.or}>or</div>
                     <div
                         className={isActive ? classes.pickUpAction : classes.pickUpChoice}
-                        onClick={ChangeButtons}
+                        onChange={changeButtons}
                     >Pick Up</div>
                 </div>
                 <div>

@@ -6,14 +6,6 @@ const Backdrop = props => {
     return <div className={classes.backdrop} onClick={props.onClose} />
 };
 
-// handleKeyDown(event){
-//     if (event.keyCode === 27) {
-//         this.setState({
-//         fireRedirectProjects: true
-//         })
-//     }
-    
-// }
 
 const ModalOverlays = props => {
     return <div className={classes.modal}>
@@ -28,8 +20,6 @@ const portalElement = document.getElementById("overlays");
 const Modal = props => {
 return (
     <Fragment>
-        {/* <Backdrop />
-        <ModalOverlays /> */}
     {ReactDOM.createPortal(<Backdrop onClose={props.onClose} />, portalElement)}
     {ReactDOM.createPortal(<ModalOverlays>{props.children}</ModalOverlays>, portalElement)}
     </Fragment>
