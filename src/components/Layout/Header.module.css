@@ -60,25 +60,56 @@
     border-radius: 20px;
   }
   .deliveryChoice {
-    
+       
     /* padding-left: 0.5rem; */
   }
   .or {
     
   }
-  .pickUp {
+  .pickUpChoice {
     
     /* padding-right: 0.5rem; */
   }
   .deliveryAdress {
     font-size: 13px;
   }
+  .deliveryAction {
+    background-color: #ffffff;
+    border-color: #ffffff;
+    display: flex;
+    font-size: 13px;
+    justify-content: space-around;
+    width: 4rem;
+    height: 1.8rem;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    align-items: center;
+    border-radius: 20px;
+    /* padding-left: 0.5rem; */
+  }
+  .or {
+    
+  }
+  .pickUpAction {
+    background-color: #ffffff;
+      border-color: #ffffff;
+      display: flex;
+      font-size: 13px;
+      justify-content: space-around;
+      width: 4rem;
+      height: 1.8rem;
+      cursor: pointer;
+      color: rgb(0, 0, 0);
+      align-items: center;
+      border-radius: 20px;
+    /* padding-right: 0.5rem; */
+  }
 
   .deliveryTime {
     font-size: 13px;
   }
   .deliveryChoice:hover,
-  .pickUp:hover {
+  .pickUpChoice:hover {
       background-color: #ffffff;
       border-color: #ffffff;
       display: flex;
@@ -93,7 +124,7 @@
   }
   
   .deliveryChoice:active,
-  .pickUp:active {
+  .pickUpChoice:active {
     background-color: #50afc0;
     border-color: #ffffff;
     display: flex;

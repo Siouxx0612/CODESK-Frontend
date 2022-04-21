@@ -8,7 +8,7 @@ const MealItem = (props) => {
     const cartCtx = useContext(CartContext);
 
     const price = `$${props.price.toFixed(2)}`;
-
+// Reach for our context to get addItem with id: that we get trough props, name, amount and price too
     const addToCartHandler = amount => {
        cartCtx.addItem({
            id: props.id,
@@ -18,6 +18,7 @@ const MealItem = (props) => {
        })
     };
 
+    
     return (
         <li className={classes.meal}>
             <div>
