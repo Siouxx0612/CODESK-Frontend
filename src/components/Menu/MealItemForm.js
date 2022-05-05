@@ -23,7 +23,8 @@ const MeaItemForm = (props) => {
         props.onAddToCart(enteredAmountNumber);
     };
 
-    return <form className={classes.form} onSubmit={submitHandler}>
+    return <form
+        className={classes.form} onSubmit={submitHandler}>
         <Input
             label="Amount"
             ref={amountInputRef}
