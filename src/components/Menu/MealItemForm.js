@@ -36,7 +36,7 @@ const MeaItemForm = (props) => {
                 step: "1",
                 defaultValue: "1",
             }} />
-        <div className={classes.button}>+ Add</div>
+        <button className={classes.button}>+ Add</button>
         {!amountIsValid && <p>This is not valid amount (1-5).</p>}
     </form>
 };
