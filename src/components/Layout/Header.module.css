@@ -119,8 +119,8 @@
       border-radius: 20px;
   }
   
-  /* .deliveryChoice:active,
-  .pickUpChoice:active {
+  .deliveryOption:active,
+  .pickUpOption:active {
     background-color: #50afc0;
     border-color: #ffffff;
     display: flex;
@@ -132,4 +132,4 @@
     color: rgb(0, 0, 0);
     align-items: center;
     border-radius: 20px;
-  } */
+  }
