@@ -59,16 +59,12 @@
     align-items: center;
     border-radius: 20px;
   }
-  .deliveryChoice {
-       
-    /* padding-left: 0.5rem; */
+  .deliveryOption {
   }
   .or {
     
   }
-  .pickUpChoice {
-    
-    /* padding-right: 0.5rem; */
+  .pickUpOption {
   }
   .deliveryAdress {
     font-size: 13px;
@@ -108,8 +104,8 @@
   .deliveryTime {
     font-size: 13px;
   }
-  .deliveryChoice:hover,
-  .pickUpChoice:hover {
+  .deliveryOption:hover,
+  .pickUpOption:hover {
       background-color: #ffffff;
       border-color: #ffffff;
       display: flex;
@@ -123,7 +119,7 @@
       border-radius: 20px;
   }
   
-  .deliveryChoice:active,
+  /* .deliveryChoice:active,
   .pickUpChoice:active {
     background-color: #50afc0;
     border-color: #ffffff;
@@ -136,4 +132,4 @@
     color: rgb(0, 0, 0);
     align-items: center;
     border-radius: 20px;
-  }
+  } */
