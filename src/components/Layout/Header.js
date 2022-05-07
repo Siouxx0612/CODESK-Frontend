@@ -3,6 +3,7 @@ import mealsImg from '../../assets/wp3376124.jpeg';
 import classes from '../Layout/Header.module.css';
 import HeaderCartButton from '../Layout/HeaderCartButton';
 import { useState } from 'react';
+import ToggleButton from './ToggleButton';
 
 const reload = () => {
     window.location.reload()
@@ -10,20 +11,25 @@ const reload = () => {
 
 const Header = props => {
 
-    const [isDeliveryActive, setIsDeliveryActive] = useState(true);
-    const [isPickupAtive, setIsPickupActive] = useState(false);
+    // const [isDeliveryActive, setIsDeliveryActive] = useState(true);
+    // const [isPickupAtive, setIsPickupActive] = useState(false);
 
-    const handleMouseClick = (event) => {
-        if (event.target.className.includes('deliveryOption')) {
-            setIsDeliveryActive(true);
-            setIsPickupActive(false)
-            console.log(isDeliveryActive, isPickupAtive)
-        } else if (event.target.className.includes('pickUpOption')) {
-            setIsDeliveryActive(false);
-            setIsPickupActive(true)
-            console.log(isDeliveryActive, isPickupAtive)
-        }
-    }
+    // const handleMouseClick = (event) => {
+    //     if (event.target.className.includes('deliveryOption')) {
+    //         setIsDeliveryActive(true);
+    //         setIsPickupActive(false)
+    //         if(isDeliveryActive === true) {
+    //             console.log('WTF NOW')   
+    //         }
+    //         console.log(isDeliveryActive, isPickupAtive)
+    //     } else if (event.target.className.includes('pickUpOption')) {
+    //         setIsDeliveryActive(false);
+    //         setIsPickupActive(true)
+    //         console.log(isDeliveryActive, isPickupAtive)
+    //     }
+    // }
+
+
 
     return (
         <Fragment>
@@ -33,22 +39,7 @@ const Header = props => {
                         Foodzilla
                     </div>
                 </div>
-                <div className={classes.delivery}>
-                    <div
-                        className={classes.deliveryOption}
-                        onClick={handleMouseClick}
-                    >Delivery</div>
-                    <div className={classes.or}>or</div>
-                    <div
-                        className={classes.pickUpOption}
-                        onClick={handleMouseClick}
-                    >Pick Up</div>
-                </div>
-                <div>
-                    <div className={classes.deliveryAdress}>
-                       {isDeliveryActive ? <p>Delivery:</p> : <p>PickUp: </p>}
-                    </div>
-                </div>
+                <ToggleButton></ToggleButton>
 
                 <div className={classes.deliveryTime}>
                     <div >

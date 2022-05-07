@@ -133,3 +133,17 @@
     align-items: center;
     border-radius: 20px;
   }
+  .deliveryOption:focus,
+  .pickUpOption:focus{
+    background-color: #50afc0;
+    border-color: #ffffff;
+    display: flex;
+    font-size: 13px;
+    justify-content: space-around;
+    width: 4rem;
+    height: 1.8rem;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    align-items: center;
+    border-radius: 20px;
+  }
