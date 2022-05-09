@@ -39,7 +39,7 @@ const Header = props => {
                 </div>
                 <div>
                     <div className={classes.deliveryAdress}>
-                        Delivery to: Gabriel Jönssonsgatan 8
+                        Delivery to: 
                     </div>
                 </div>
 

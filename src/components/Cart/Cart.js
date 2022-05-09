@@ -3,6 +3,7 @@ import { useContext } from 'react';
 import CartContext from '../../store/cart-context';
 import { CallApi } from '../Utillitys/Api';
 import classes from '../Cart/Cart.module.css';
+import CartItem from './CartItem';
 
 const apiCall = () => {
     CallApi({ order: 'Hello this is api call' }, 'POST', 'http://localhost:5000/order').then((result) => console.log(result))
@@ -10,11 +11,26 @@ const apiCall = () => {
 
 const Cart = props => {
 
-   const cartCtx = useContext(CartContext);
-//use template literal to output a dollar sign in front of this dynamic value
-   const totalAmount = `$${cartCtx.totalAmount.toFixed(2)}`;
+    const cartCtx = useContext(CartContext);
+    //use template literal to output a dollar sign in front of this dynamic value
+    const totalAmount = `$${cartCtx.totalAmount.toFixed(2)}`;
 
-    const cartitems = <ul className={classes["cart-items"]}>{cartCtx.items.map((item) => <li>{item.name}</li>)}</ul>;
+    //Functions for adding and removing items
+    const cartItemRemoveHandler = id => {};
+
+    const cartItemAddHandler = item => {};
+
+    const cartitems = <ul className={classes["cart-items"]}>{cartCtx.items.map((item) =>
+        <CartItem 
+        key={item.id} 
+        name={item.name} 
+        amount={item.amount} 
+        price={item.price}
+        onRemove={cartItemRemoveHandler.bind(null, item.id)}
+        onAdd={cartItemAddHandler(null, item)} 
+        />
+    )}
+    </ul>;
     const hasItems = cartCtx.items.length > 0;
 
 
