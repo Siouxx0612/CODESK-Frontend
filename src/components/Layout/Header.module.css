@@ -1,139 +1,103 @@
 .header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 6rem;
-    background-color: #ffffff;
-    color: rgb(0, 0, 0);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 6%;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
-    z-index: 10;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 6rem;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 6%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  z-index: 10;
 
-  }
-  .logo {
-    font-size: 26px;
-    z-index: max;
-    height: 2rem;
-    color: rgb(16, 135, 139);
-    border-right: 1px solid rgb(199, 197, 197);
-    padding-right: 2rem;
-    padding-left: 2rem;
-    padding-top: 0.1rem;
+}
 
-  }
-  .logo:hover,
-  .logo:active {
-    background-color: #ffffff;
-    color:#000000;
-    cursor: pointer;
-  }
-  
-  
-  .main-image {
-    width: 100%;
-    height: 25rem;
-    z-index: 0;
-    overflow: hidden;
-  }
-  
-  .main-image img {
-    width: 110%;
-    height: 100%;
-    object-fit: cover;
-    transform: rotateZ(-5deg) translateY(-4rem) translateX(-1rem);
-  }
-  .delivery {
-    display: flex;
-    font-size: 13px;
-    justify-content: space-around;
-    min-width: 10rem;
-    height: 2rem;
-    cursor: pointer;
-    background-color: #f3f3f3;
-    /* border: 1px solid #b4b4b4; */
-    color: rgb(0, 0, 0);
-    align-items: center;
-    border-radius: 20px;
-  }
-  .deliveryChoice {
-       
-    /* padding-left: 0.5rem; */
-  }
-  .or {
-    
-  }
-  .pickUpChoice {
-    
-    /* padding-right: 0.5rem; */
-  }
-  .deliveryAdress {
-    font-size: 13px;
-  }
-  .deliveryAction {
-    background-color: #ffffff;
-    border-color: #ffffff;
-    display: flex;
-    font-size: 13px;
-    justify-content: space-around;
-    width: 4rem;
-    height: 1.8rem;
-    cursor: pointer;
-    color: rgb(0, 0, 0);
-    align-items: center;
-    border-radius: 20px;
-    /* padding-left: 0.5rem; */
-  }
-  .or {
-    
-  }
-  .pickUpAction {
-    background-color: #ffffff;
-      border-color: #ffffff;
-      display: flex;
-      font-size: 13px;
-      justify-content: space-around;
-      width: 4rem;
-      height: 1.8rem;
-      cursor: pointer;
-      color: rgb(0, 0, 0);
-      align-items: center;
-      border-radius: 20px;
-    /* padding-right: 0.5rem; */
-  }
+.logo {
+  font-size: 26px;
+  z-index: max;
+  height: 2rem;
+  color: rgb(16, 135, 139);
+  border-right: 1px solid rgb(199, 197, 197);
+  padding-right: 2rem;
+  padding-left: 2rem;
+  padding-top: 0.1rem;
 
-  .deliveryTime {
-    font-size: 13px;
-  }
-  .deliveryChoice:hover,
-  .pickUpChoice:hover {
-      background-color: #ffffff;
-      border-color: #ffffff;
-      display: flex;
-      font-size: 13px;
-      justify-content: space-around;
-      width: 4rem;
-      height: 1.8rem;
-      cursor: pointer;
-      color: rgb(0, 0, 0);
-      align-items: center;
-      border-radius: 20px;
-  }
-  
-  .deliveryChoice:active,
-  .pickUpChoice:active {
-    background-color: #50afc0;
-    border-color: #ffffff;
-    display: flex;
-    font-size: 13px;
-    justify-content: space-around;
-    width: 4rem;
-    height: 1.8rem;
-    cursor: pointer;
-    color: rgb(0, 0, 0);
-    align-items: center;
-    border-radius: 20px;
-  }
+}
+
+.logo:hover,
+.logo:active {
+  background-color: #ffffff;
+  color: #000000;
+  cursor: pointer;
+}
+
+
+.main-image {
+  width: 100%;
+  height: 25rem;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.main-image img {
+  width: 110%;
+  height: 100%;
+  object-fit: cover;
+  transform: rotateZ(-5deg) translateY(-4rem) translateX(-1rem);
+}
+
+.delivery {
+  display: flex;
+  font-size: 13px;
+  justify-content: space-around;
+  min-width: 10rem;
+  height: 2rem;
+  cursor: pointer;
+  background-color: #f3f3f3;
+  /* border: 1px solid #b4b4b4; */
+  color: rgb(0, 0, 0);
+  align-items: center;
+  border-radius: 20px;
+}
+
+.deliveryAdress {
+  font-size: 13px;
+}
+
+.deliveryTime {
+  font-size: 13px;
+}
+.deliveryChoice {
+  cursor: pointer;
+}
+
+.deliveryChoice:hover {
+  background-color: #ffffff;
+  border-color: #ffffff;
+  display: flex;
+  font-size: 13px;
+  justify-content: space-around;
+  width: 4rem;
+  height: 1.8rem;
+  cursor: pointer;
+  color: rgb(0, 0, 0);
+  align-items: center;
+  border-radius: 20px;
+}
+
+.deliveryChoice:active {
+  background-color: #50afc0;
+  border-color: #ffffff;
+  display: flex;
+  font-size: 13px;
+  justify-content: space-around;
+  width: 4rem;
+  height: 1.8rem;
+  cursor: pointer;
+  color: rgb(0, 0, 0);
+  align-items: center;
+  border-radius: 20px;
+}
