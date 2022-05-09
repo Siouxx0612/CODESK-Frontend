@@ -3,7 +3,6 @@ import mealsImg from '../../assets/wp3376124.jpeg';
 import classes from '../Layout/Header.module.css';
 import HeaderCartButton from '../Layout/HeaderCartButton';
 import { useState } from 'react';
-import ToggleButton from './ToggleButton';
 
 const reload = () => {
     window.location.reload()
@@ -11,25 +10,13 @@ const reload = () => {
 
 const Header = props => {
 
-    // const [isDeliveryActive, setIsDeliveryActive] = useState(true);
-    // const [isPickupAtive, setIsPickupActive] = useState(false);
+    const [isActive, setIsActive] = useState(false);
+    
 
-    // const handleMouseClick = (event) => {
-    //     if (event.target.className.includes('deliveryOption')) {
-    //         setIsDeliveryActive(true);
-    //         setIsPickupActive(false)
-    //         if(isDeliveryActive === true) {
-    //             console.log('WTF NOW')   
-    //         }
-    //         console.log(isDeliveryActive, isPickupAtive)
-    //     } else if (event.target.className.includes('pickUpOption')) {
-    //         setIsDeliveryActive(false);
-    //         setIsPickupActive(true)
-    //         console.log(isDeliveryActive, isPickupAtive)
-    //     }
-    // }
-
-
+    function changeButtons () {
+            setIsActive = (!isActive)
+        
+    };
 
     return (
         <Fragment>
@@ -39,20 +26,36 @@ const Header = props => {
                         Foodzilla
                     </div>
                 </div>
-                <ToggleButton></ToggleButton>
+                <div className={classes.delivery}>
+                    <div
+                        className={isActive ? classes.deliveryAction : classes.deliveryChoice}
+                        onChange={changeButtons}
+                    >Delivery</div>
+                    <div className={classes.or}>or</div>
+                    <div
+                        className={isActive ? classes.pickUpAction : classes.pickUpChoice}
+                        onChange={changeButtons}
+                    >Pick Up</div>
+                </div>
+                <div>
+                    <div className={classes.deliveryAdress}>
+                        Delivery to: Gabriel Jönssonsgatan 8
+                    </div>
+                </div>
 
                 <div className={classes.deliveryTime}>
                     <div >
                         Choose time: Now
                     </div>
                 </div>
-                <HeaderCartButton onClick={props.onShowCart} ></HeaderCartButton>
+
+                <HeaderCartButton onClick={props.onShowCart} />
             </header>
             <div className={classes['main-image']}>
                 <img src={mealsImg} />
             </div>
         </Fragment>
-    )
+    );
 };
 
 export default Header; 
