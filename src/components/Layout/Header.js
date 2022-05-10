@@ -23,12 +23,6 @@ const Header = props => {
                         className={classes.deliveryChoice}
                     />
                 </div>
-                <div>
-                    <div className={classes.deliveryAdress}>
-                        Delivery to:
-                    </div>
-                </div>
-
                 <div className={classes.deliveryTime}>
                     <div >
                         Choose time: Now
