@@ -2,21 +2,13 @@ import { Fragment } from 'react';
 import mealsImg from '../../assets/wp3376124.jpeg';
 import classes from '../Layout/Header.module.css';
 import HeaderCartButton from '../Layout/HeaderCartButton';
-import { useState } from 'react';
+import DeliveryButton from './DeliveryButtons';
 
 const reload = () => {
     window.location.reload()
 };
 
 const Header = props => {
-
-    const [isActive, setIsActive] = useState(false);
-    
-
-    function changeButtons () {
-            setIsActive = (!isActive)
-        
-    };
 
     return (
         <Fragment>
@@ -27,22 +19,10 @@ const Header = props => {
                     </div>
                 </div>
                 <div className={classes.delivery}>
-                    <div
-                        className={isActive ? classes.deliveryAction : classes.deliveryChoice}
-                        onChange={changeButtons}
-                    >Delivery</div>
-                    <div className={classes.or}>or</div>
-                    <div
-                        className={isActive ? classes.pickUpAction : classes.pickUpChoice}
-                        onChange={changeButtons}
-                    >Pick Up</div>
+                    <DeliveryButton
+                        className={classes.deliveryChoice}
+                    />
                 </div>
-                <div>
-                    <div className={classes.deliveryAdress}>
-                        Delivery to: Gabriel Jönssonsgatan 8
-                    </div>
-                </div>
-
                 <div className={classes.deliveryTime}>
                     <div >
                         Choose time: Now
