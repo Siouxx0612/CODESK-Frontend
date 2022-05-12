@@ -1,9 +1,14 @@
 import { useContext } from 'react';
-
+import { CallApi } from '../Utillitys/Api';
 import Modal from '../UI/Modal';
 import CartItem from './CartItem';
 import classes from './Cart.module.css';
 import CartContext from '../../store/cart-context';
+
+
+const apiCall = () => {
+    CallApi({ order: 'Hello this is api call' }, 'POST', 'http://localhost:5000/order').then((result) => console.log(result))
+}
 
 const Cart = (props) => {
   const cartCtx = useContext(CartContext);
@@ -45,7 +50,10 @@ const Cart = (props) => {
         <button className={classes['button--alt']} onClick={props.onClose}>
           Close
         </button>
-        {hasItems && <button className={classes.button}>Order</button>}
+        {hasItems && <button 
+        className={classes.button}
+        onClick={apiCall}
+        >Order</button>}
       </div>
     </Modal>
   );
